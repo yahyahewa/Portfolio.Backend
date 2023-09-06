@@ -12,6 +12,7 @@ connectDb();
 const app = express();
 app.use(express.json());
 app.use(helmet());
+app.set('trust proxy', true);
 // const corsOptions={
 //   origin: [process.env.ORIGIN_LINK,process.env.ORIGIN_LINK2,process.env.ORIGIN_LINK3],
 //   methods: "GET,POST,DELETE,PATCH",
