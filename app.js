@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(helmet());
 app.set('trust proxy', true);
 const corsOptions={
-  origin: ['http://localhost:3000','kazh.netlify.app'],
+  origin: ['http://localhost:3000','https://kazh.netlify.app'],
   methods: "POST",
 }
 app.use(cors(corsOptions));
